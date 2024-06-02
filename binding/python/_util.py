@@ -51,6 +51,8 @@ def _pv_linux_machine(machine):
         return 'cortex-a72' + arch_info
     elif "0xd0b" == cpu_part:
         return "cortex-a76" + arch_info
+    elif "0xd05" == cpu_part:
+        return "cortex-a76" + arch_info
     elif '0xc08' == cpu_part:
         return 'beaglebone' + arch_info
     elif machine == 'armv7l':
